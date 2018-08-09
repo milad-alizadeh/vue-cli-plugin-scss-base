@@ -1,0 +1,20 @@
+/*
+ * Hamburger menu setup
+ */
+
+$hamburger-color: $black;
+$hamburger-background-color: transparent;
+// The width of the button area
+$hamburger-width: 2.8rem;
+// The height of the button area
+$hamburger-height: 2.2rem;
+// The thickness of the button bars
+$hamburger-bar-thickness: .3rem;
+// The spacing between button bars
+$hamburger-bar-space: .4rem;
+// border radius
+$hamburger-bar-border-radius: 1rem;
+// The left/right padding between button area and bars.
+$hamburger-pad: 0;
+// The transition duration
+$hamburger-transistion-duration: .3s;

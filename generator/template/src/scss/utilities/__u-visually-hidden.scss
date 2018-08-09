@@ -1,0 +1,14 @@
+/*
+ * Visually hide the element but keep it available to screen readers.
+ */
+
+.u-visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+}

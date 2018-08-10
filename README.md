@@ -108,10 +108,10 @@ Sometime you need share styling within your components and you don't want to rep
   .promo {
   	background: url('@/assets/bg.jpg');
 
-	.label {
-		// Only visible to screen readers && search bots
-		@extend .u-visually-hidden;
-	}
+		.label {
+			// Only visible to screen readers && search bots
+			@extend .u-visually-hidden;
+		}
   }
 </style>
 ```

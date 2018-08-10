@@ -1,7 +1,7 @@
 {
   "name": "vue-cli-plugin-scss-base",
   "version": "0.1.2",
-  "description": "An opiniated Vue CLI plugin to include base SCSS structure and files such as variables, mixins and reset",
+  "description": "An opinionated Vue CLI plugin to include base SCSS structure and files such as variables, mixins and reset",
   "main": "index.js",
   "repository": {
     "type": "git",

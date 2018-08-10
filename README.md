@@ -1,8 +1,8 @@
 # vue-cli-plugin-scss-base
 
-SCSS Base is an opiniated plugin that includes globally used SCSS files to your project. This includes CSS reset, mixins, variables, base styling, animation and utility classes.
+SCSS Base is an opinionated plugin that includes globally used SCSS files to your project. This includes CSS reset, mixins, variables, base styling, animation and utility classes.
 
-All the files are added under src/scss in your view project.
+All the files are added under `src/scss` in your view project.
 
 The structure is as follows:
 
@@ -27,7 +27,7 @@ vue: {
 }
 ```
 
-Once you install this plugin you can immediately use your scss files such as variables and mixins within your project.
+Once you install this plugin you can immediately use your SCSS files such as variables and mixins within your project.
 
 ```
 <template>

@@ -69,11 +69,11 @@ There's a useful mixin called `breakpoints` already included in this plugin whic
 
   	// $medium refers to px values of the min-width and
   	// can be set in scss/varaibles/breakpoints
-  	@breakpoint($medium) {
+  	@include breakpoint($medium) {
   		width: 50%;
   	}
 
-  	@breakpoint($large) {
+  	@include breakpoint($large) {
   		width: 25%;
   	}
   }

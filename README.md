@@ -124,3 +124,6 @@ or
   </div>
 </template>
 ```
+
+## LICENSE
+[MIT](https://raw.githubusercontent.com/milad-alizadeh/vue-cli-plugin-scss-base/master/LICENSE)

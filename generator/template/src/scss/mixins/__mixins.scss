@@ -1,6 +1,4 @@
-/*
- * Media Queries
- */
+// Media Queries
 @mixin breakpoint($min-width: null, $min-height: null, $medium: screen) {
   @if ($min-width != null and $min-height != null) {
     @media #{$medium} and (min-width: $min-width) and (min-height: $min-height) {
@@ -19,9 +17,7 @@
   }
 }
 
-/*
-  Creating triangles
- */
+// Creating triangles
 @mixin triangle ($size, $color, $direction) {
   height: 0;
   width: 0;
@@ -93,11 +89,9 @@
   }
 }
 
-/*
-  Breakpoint-loop
-  @include breakpoint-loop(width, (($medium, 80%), ($large, 50%)));
-*/
 
+// Breakpoint-loop
+// @include breakpoint-loop(width, (($medium, 80%), ($large, 50%)));
 @mixin breakpoint-loop($element, $properties) {
     @each $property in $properties {
         $size: nth($property, 1);
@@ -109,11 +103,11 @@
     }
 }
 
-/*
-  Full stretching an item the size of it's parent.
-  Remmeber that the parent can't have the position: static.
-  otherwise this mixin won't work
- */
+
+// Full stretching an item the size of it's parent.
+// Remmeber that the parent can't have the position: static.
+// otherwise this mixin won't work
+
 @mixin full-absolute() {
   position: absolute;
   width: 100%;

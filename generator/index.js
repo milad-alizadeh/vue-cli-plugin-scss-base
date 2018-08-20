@@ -5,7 +5,7 @@ module.exports = (api, options, rootOptions) => {
       css: {
         loaderOptions: {
           sass: {
-            data: '@import "@/scss/base.scss";'
+            data: '@import "@/scss/settings.scss";'
           }
         }
       }

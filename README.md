@@ -13,19 +13,21 @@ The structure is as follows:
 	* utilities
 	* variables
 
-The main file `base.scss` is automatically included in your project using the following config in your `vue.config.js` or the `"vue"` section of your `package.json`.
+The main file `settings.scss` is automatically included in your project using the following config in your `vue.config.js` or the `"vue"` section of your `package.json`. This file includes all the variables and mixins.
 
 ```
 vue: {
   css: {
     loaderOptions: {
       sass: {
-        data: '@import "@/scss/base.scss";'
+        data: '@import "@/scss/settings.scss";'
       }
     }
   }
 }
 ```
+
+All the basic CSS files such as reset, animation etc are added to App.vue with the line `@import '@/scss/base.scss';`
 
 Once you install this plugin you can immediately use your SCSS files such as variables and mixins within your project.
 

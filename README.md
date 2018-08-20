@@ -7,11 +7,11 @@ All the files are added under `src/scss` in your view project.
 The structure is as follows:
 
 * scss
-	* animation
-	* base
-	* mixins
-	* utilities
-	* variables
+  * animation
+  * base
+  * mixins
+  * utilities
+  * variables
 
 The main file `settings.scss` is automatically included in your project using the following config in your `vue.config.js` or the `"vue"` section of your `package.json`. This file includes all the variables and mixins.
 
@@ -67,17 +67,17 @@ There's a useful mixin called `breakpoints` already included in this plugin whic
 ```
 <style lang="scss">
   .promo {
-  	width: 100%;
+    width: 100%;
 
-  	// $medium refers to px values of the min-width and
-  	// can be set in scss/varaibles/breakpoints
-  	@include breakpoint($medium) {
-  		width: 50%;
-  	}
+    // $medium refers to px values of the min-width and
+    // can be set in scss/varaibles/breakpoints
+    @include breakpoint($medium) {
+      width: 50%;
+    }
 
-  	@include breakpoint($large) {
-  		width: 25%;
-  	}
+    @include breakpoint($large) {
+      width: 25%;
+    }
   }
 </style>
 ```
@@ -87,15 +87,15 @@ the above code is equivalent to this:
 ```
 <style lang="scss">
   .promo {
-  	width: 100%;
+    width: 100%;
 
-  	@media screen and (min-width: $medium) {
-  		width: 50%;
-  	}
+    @media screen and (min-width: $medium) {
+      width: 50%;
+    }
 
-  	@media screen and (min-width: $large) {
-  		width: 50%;
-  	}
+    @media screen and (min-width: $large) {
+      width: 50%;
+    }
   }
 </style>
 ```
@@ -108,12 +108,12 @@ Sometime you need share styling within your components and you don't want to rep
 ```
 <style lang="scss">
   .promo {
-  	background: url('@/assets/bg.jpg');
+    background: url('@/assets/bg.jpg');
 
-		.label {
-			// Only visible to screen readers && search bots
-			@extend .u-visually-hidden;
-		}
+    .label {
+      // Only visible to screen readers && search bots
+      @extend .u-visually-hidden;
+    }
   }
 </style>
 ```

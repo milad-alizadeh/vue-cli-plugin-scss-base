@@ -94,6 +94,22 @@
 }
 
 /*
+  Breakpoint-loop
+  @include breakpoint-loop(width, (($medium, 80%), ($large, 50%)));
+*/
+
+@mixin breakpoint-loop($element, $properties) {
+    @each $property in $properties {
+        $size: nth($property, 1);
+        $value: nth($property, 2);
+
+        @include breakpoint($size) {
+            #{$element}: $value;
+        }
+    }
+}
+
+/*
   Full stretching an item the size of it's parent.
   Remmeber that the parent can't have the position: static.
   otherwise this mixin won't work
